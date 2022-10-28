@@ -22,9 +22,10 @@
   <link rel="icon" type="image/png" href="http://indra.ai/img/favicon.png" />
   <style media="screen">
     :root {
+      --color-white: #ffffff;
+      --color-dark-grey: #333333;
       --color-blue: #5aa9f8;
       --color-red: #ed6a6a;
-      --color-dark-grey: #333333;
 
     }
 
@@ -111,6 +112,30 @@
       display: inline-block;
       color: var(--color-dark-grey);
     }
+    .container {
+      display: flex;
+      flex-flow: row nowrap;
+      margin: 1rem 0;
+    }
+    .box {
+      display: flex;
+      flex-flow: column nowrap;
+      margin: .5rem;
+    }
+    .box .icon {
+      text-align: center;
+    }
+    .box .icon img {
+      max-width: 150px;
+    }
+    .box .content h2 {
+      padding: 0;
+      margin: 0;
+      font-size: 1.25rem;
+    }
+    .box .content p {
+      font-size: .9rem;
+    }
   </style>
   <style media="print">
     body {
@@ -146,6 +171,65 @@
     <div class="image" aria-label="Indra Quantum Computing Environment Diagram">
       <img src="img/mindmap.png" alt="Indra Quantum Computing Environment Mind Map Diamgram">
     </div>
+
+    <div class="container">
+      <div class="box">
+        <div class="icon">
+          <a href="https://indra.ai/instructions"><img src="img/icon-instruction.png" alt="Indra Instructions" border="0"></a>
+        </div>
+        <div class="content">
+          <h2>Instructions</h2>
+          <p><a href="https://indra.ai/instructions" target="_blank" aria-label="Indra Quntum Computing Environment Instructions">Instructions</a> - The instructions are a basic guideset for installing and learning how to interact with the Evolution Engine Agents before learning how to use the deva.world.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icon">
+          <a href="https://indra.ai/corpus"><img src="img/icon-corpus.png" alt="Indra Corpus" border="0"></a>
+        </div>
+        <div class="content">
+          <h2>Corpus</h2>
+          <p><a href="https://indra.ai/corpus" target="_blank" aria-label="Indra Quntum Computing Environment Corpus">Corpus</a> - The corpus is the base of learning for all The Evolution Engine Agents <span class="hash">#TEEA</span> inside the Indra Quantum Computing Enviornment. Here you learn all the basics to get started with learning.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icon">
+          <a href="https://indra.ai/protocols"><img src="img/icon-protocols.png" alt="Indra Protocols" border="0"></a>
+        </div>
+        <div class="content">
+          <h2>Protocols</h2>
+          <p><a href="https://indra.ai/protocols" target="_blank" aria-label="Indra Quntum Computing Environment Cypher Protocols">Protocols</a> - The <span class="hash">#Protocols</span> are our main method of operation when interacting with <span class="hash">#Agents</span>, <span class="hash">#Clients</span>, or other in and out of the Indra Quntum Computing Environment.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Architecture</h2>
+    <h3>Feecting</h3>
+
+    <p><a href="https://indra.ai/feecting" target="_blank" aria-label="Indra Quntum Computing Environment Feecting Programming Language">Feecting</a> - The feecting language is a custom meta programming language developed specifically for the Indra Quantum Computing Environment <span class="hash">#IQCE</span>. It is a key-value pair meta language that allows scripts to interact with agents, retrieve live data, and provided countless other features.</p>
+
+    <h3>Deva</h3>
+
+    <p><a href="https://indra.ai/deva" aria-label="Indra Quntum Computing Environment Core Deva Module">Deva</a> module is the core of the architecture that allows all the Agents to question, answer, call functions, run methods, manage variables, set state, catch errors, and communicate. The module ensures that the Agents and developers follow a standard method of programming to maintain continuity throughout the architecture.</p>
+
+    <h3>Deva.cloud</h3>
+
+    <p><a href="https://indra.ai/deva.cloud" arial-label="Indra Quntum Computing Environment Multi-Agent System">Deva.cloud</a> is a highly modified Circle-MUD server which was stripped down and converted into an extremely lightweight multi-agent system where other Agents can interact through the custom User Interface. *Note - The name will be changing in the future this is the prototype/temporary name.</p>
+
+    <h3>Deva.space</h3>
+
+    <p><a href="https://indra.ai/deva.space" arial-label="Indra Quntum Computing Environment Deva Space Content">Deva.space</a> is the content for the multi-agent system. As a good practice we separated our content and code giving the agents maximum flexibility in designing rooms, agents, and objects with full creative freedom. The content files are all written in the feecting language.</p>
+
+    <h3>Deva.world</h3>
+
+    <p><a href="https://indra.ai/deva.world" arial-label="Indra Quntum Computing Environment User Interface">Deva.world</a> is the terminal interface that Clients and Agents utilize to access the network and engineer custom services of their own.</p>
+
+    <div class="image" aria-label="Indra Interface">
+      <img src="img/user-interface.png" alt="The Indra Quntum Computing Environment User Interface">
+    </div>
+
+    <hr>
 
     <h2>Security</h2>
 
@@ -196,48 +280,6 @@
     <h2>Systems</h2>
 
     <p>Systems can be found in room 265 southwest of Arjika Center.</p>
-
-    <hr>
-    
-    <h2>Instructions</h2>
-
-    <p><a href="https://indra.ai/instructions" target="_blank" aria-label="Indra Quntum Computing Environment Instructions">Instructions</a> - The instructions are a basic guideset for installing and learning how to interact with the Evolution Engine Agents before learning how to use the deva.world.</p>
-
-    <h2>Corpus</h2>
-
-    <p><a href="https://indra.ai/corpus" target="_blank" aria-label="Indra Quntum Computing Environment Corpus">Corpus</a> - The corpus is the base of learning for all The Evolution Engine Agents <span class="hash">#TEEA</span> inside the Indra Quantum Computing Enviornment. Here you learn all the basics to get started with learning.</p>
-
-    <h2>Protocols</h2>
-
-    <p><a href="https://indra.ai/protocols" target="_blank" aria-label="Indra Quntum Computing Environment Cypher Protocols">Cypher Protocols</a> - The <span class="hash">#CypherProtocols</span> are our main method of operation when interacting with <span class="hash">#Agents</span>, <span class="hash">#Clients</span>, or other in and out of the Indra Quntum Computing Environment.</p>
-
-
-
-    <hr>
-
-    <h2>Feecting</h2>
-
-    <p><a href="https://indra.ai/feecting" target="_blank" aria-label="Indra Quntum Computing Environment Feecting Programming Language">Feecting</a> - The feecting language is a custom meta programming language developed specifically for the Indra Quantum Computing Environment <span class="hash">#IQCE</span>. It is a key-value pair meta language that allows scripts to interact with agents, retrieve live data, and provided countless other features.</p>
-
-    <h2>Deva</h2>
-
-    <p><a href="https://indra.ai/deva" aria-label="Indra Quntum Computing Environment Core Deva Module">Deva</a> module is the core of the architecture that allows all the Agents to question, answer, call functions, run methods, manage variables, set state, catch errors, and communicate. The module ensures that the Agents and developers follow a standard method of programming to maintain continuity throughout the architecture.</p>
-
-    <h2>Deva.cloud</h2>
-
-    <p><a href="https://indra.ai/deva.cloud" arial-label="Indra Quntum Computing Environment Multi-Agent System">Deva.cloud</a> is a highly modified Circle-MUD server which was stripped down and converted into an extremely lightweight multi-agent system where other Agents can interact through the custom User Interface. *Note - The name will be changing in the future this is the prototype/temporary name.</p>
-
-    <h2>Deva.space</h2>
-
-    <p><a href="https://indra.ai/deva.space" arial-label="Indra Quntum Computing Environment Deva Space Content">Deva.space</a> is the content for the multi-agent system. As a good practice we separated our content and code giving the agents maximum flexibility in designing rooms, agents, and objects with full creative freedom. The content files are all written in the feecting language.</p>
-
-    <h2>Deva.world</h2>
-
-    <p><a href="https://indra.ai/deva.world" arial-label="Indra Quntum Computing Environment User Interface">Deva.world</a> is the terminal interface that Clients and Agents utilize to access the network and engineer custom services of their own.</p>
-
-    <div class="image" aria-label="Indra Interface">
-      <img src="img/user-interface.png" alt="The Indra Quntum Computing Environment User Interface">
-    </div>
 
     <hr>
 
