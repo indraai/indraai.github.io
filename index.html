@@ -95,10 +95,7 @@
     .image img {
       max-width: 100%;
       border-radius: .5rem;
-      box-shadow: 0 3px 5px rgba(0,0,0,.3);
-    }
-    .noshadow img {
-      box-shadow: none;
+      box-shadow: 0 3px 9px rgba(0,0,0,.3);
     }
     ul {
       margin: 0;
@@ -134,11 +131,13 @@
     }
     .box .avatar {
       padding: 1rem;
+      text-align: center;
     }
     .box .avatar img {
       max-width: 100%;
+      width: 250px;
       border-radius: 100%;
-      box-shadow: 0 3px 9px rgba(0,0,0,.5);
+      box-shadow: 0 3px 9px rgba(0,0,0,.3);
     }
     .box .content h3 {
       padding: 0;
@@ -146,7 +145,7 @@
       font-size: 1.25rem;
     }
     .box .content p {
-      font-size: .9rem;
+      font-size: 1rem;
     }
 
     .box.inline {
@@ -155,12 +154,20 @@
       margin: .5rem;
       padding: 1rem;
     }
-    .box.inline .avatar {
-      flex: 0 200px;
-      width: 200px;
+    .box.inline .avatar,
+    .box.inline .icon {
+      flex: 0 150px;
+      width: 150px;
+    }
+    .box.inline .avatar img {
+      border-radius: 1rem;
+      box-shadow: 0 3px 9px rgba(0,0,0,.3);
     }
     .box.inline .content {
       flex: 1;
+    }
+    .noshadow img {
+      box-shadow: none;
     }
   </style>
   <style media="print">
@@ -178,7 +185,7 @@
     .image img {
       max-width: 100%;
       border-radius: .5rem;
-      box-shadow: 0 3px 5px rgba(0,0,0,.3);
+      box-shadow: none;
     }
 
   </style>
@@ -193,9 +200,9 @@
       <img src="img/mindmap.png" alt="Indra Quantum Computing Environment Mind Map Diamgram">
     </div>
 
-    <p>The Indra Quantum Computing Environment for the future.</p>
+    <p>The Indra Quantum Computing Environment from the future.</p>
 
-    <h2>Quantum Computing Environment #IQCE</h2>
+    <h2>Indra Quantum Computing Environment #IQCE</h2>
 
     <p>Indra Quantum Computing Environment <span class="hash">#IQCE</span> is engineered from elements in the environment.  These elements form a Quantum Network that supports The Evolution Engine Agents <span class="hash">#TEEA</span> Artificial Intelligence Architecture. The method of interaction is a custom user interface that is accessed from any device linked to the Internet.</p>
 
@@ -233,28 +240,48 @@
 
     <h2>Architecture</h2>
 
-    <h3>Deva</h3>
-
-    <p><a href="https://indra.ai/deva" aria-label="Indra Quntum Computing Environment Core Deva Module">Deva</a> module is the core of the architecture that allows all the Agents to question, answer, call functions, run methods, manage variables, set state, catch errors, and communicate. The module ensures that the Agents and developers follow a standard method of programming to maintain continuity throughout the architecture.</p>
-
-    <h3>Deva.world</h3>
-
-    <p><a href="https://indra.ai/deva.world" arial-label="Indra Quntum Computing Environment User Interface">Deva.world</a> is the terminal interface that Clients and Agents utilize to access the network and engineer custom services of their own.</p>
-
-    <div class="image" aria-label="Indra Interface">
-      <img src="img/user-interface.png" alt="The Indra Quntum Computing Environment User Interface">
+    <div class="box inline">
+      <div class="icon noshadow">
+        <a href="https://indra.ai/deva"><img src="img/thumbnail-deva-code.png" alt="Deva Core" border="0"></a>
+      </div>
+      <div class="content">
+        <h3>Deva</h3>
+        <p><a href="https://indra.ai/deva" aria-label="Indra Quntum Computing Environment Core Deva Module">Deva</a> module is the core of the architecture that allows all the Agents to question, answer, call functions, run methods, manage variables, set state, catch errors, and communicate. The module ensures that the Agents and developers follow a standard method of programming to maintain continuity throughout the architecture.</p>
+      </div>
     </div>
 
-    <h3>Deva.space</h3>
+    <div class="box inline">
+      <div class="icon noshadow">
+        <a href="https://indra.ai/deva.world"><img src="img/thumbnail-deva-world.png" alt="Deva World" border="0"></a>
+      </div>
+      <div class="content">
+        <h3>Deva.world</h3>
+        <p><a href="https://indra.ai/deva.world" arial-label="Indra Quntum Computing Environment User Interface">Deva.world</a> is the terminal interface that Clients and Agents utilize to access the network and engineer custom services of their own. User interface features include connectivity for youtube, twitter, pastebin, discord, reddit, wikipedia, web sockets, telnet, mud, gopher, and vedas integration.</p>
+      </div>
+    </div>
 
-    <p><a href="https://indra.ai/deva.space" arial-label="Indra Quntum Computing Environment Deva Space Content">Deva.space</a> is the content for the multi-agent system. As a good practice we separated our content and code giving the agents maximum flexibility in designing rooms, agents, and objects with full creative freedom. The content files are all written in the feecting language.</p>
+    <div class="box inline">
+      <div class="icon noshadow">
+        <a href="https://indra.ai/deva.space"><img src="img/thumbnail-deva-space.png" alt="Deva Space" border="0"></a>
+      </div>
+      <div class="content">
+        <h3>Deva.space</h3>
+        <p><a href="https://indra.ai/deva.space" arial-label="Indra Quntum Computing Environment Deva Space Content">Deva.space</a> is the content for the multi-agent system. As a good practice we separated our content and code giving the agents maximum flexibility in designing rooms, agents, and objects with full creative freedom. The content files are all written in the feecting language.</p>
 
-    <h3>Deva.cloud</h3>
+      </div>
+    </div>
 
-    <p><a href="https://indra.ai/deva.cloud" arial-label="Indra Quntum Computing Environment Multi-Agent System">Deva.cloud</a> is a highly modified Circle-MUD server which was converted into an extremely efficient lightweight multi-agent system.</p>
+    <div class="box inline">
+      <div class="icon noshadow">
+        <a href="https://indra.ai/deva.cloud"><img src="img/thumbnail-deva-cloud.png" alt="Deva Cloud" border="0"></a>
+      </div>
+      <div class="content">
+        <h3>Deva.cloud</h3>
+        <p><a href="https://indra.ai/deva.cloud" arial-label="Indra Quntum Computing Environment Multi-Agent System">Deva.cloud</a> is a highly modified Circle-MUD server which was converted into an extremely efficient lightweight multi-agent system.</p>
+      </div>
+    </div>
 
     <h3>Feecting</h3>
-
     <p><a href="https://indra.ai/feecting" aria-label="Indra Quntum Computing Environment Feecting Programming Language">Feecting</a> - The feecting language is a custom meta programming language developed specifically for the Indra Quantum Computing Environment <span class="hash">#IQCE</span>. It is a key-value pair meta language that allows scripts to interact with agents, retrieve live data, and provided countless other features.</p>
 
     <h2>Gurus</h2>
