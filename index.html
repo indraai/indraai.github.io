@@ -130,6 +130,7 @@
     }
     .box .icon img {
       max-width: 100%;
+      height: auto;
     }
     .box .avatar {
       padding: 1rem;
@@ -146,6 +147,20 @@
     }
     .box .content p {
       font-size: .9rem;
+    }
+
+    .box.inline {
+      display: flex;
+      flex-flow: row nowrap;
+      margin: .5rem;
+      padding: 1rem;
+    }
+    .box.inline .avatar {
+      flex: 0 200px;
+      width: 200px;
+    }
+    .box.inline .content {
+      flex: 1;
     }
   </style>
   <style media="print">
@@ -218,21 +233,9 @@
 
     <h2>Architecture</h2>
 
-    <h3>Feecting</h3>
-
-    <p><a href="https://indra.ai/feecting" aria-label="Indra Quntum Computing Environment Feecting Programming Language">Feecting</a> - The feecting language is a custom meta programming language developed specifically for the Indra Quantum Computing Environment <span class="hash">#IQCE</span>. It is a key-value pair meta language that allows scripts to interact with agents, retrieve live data, and provided countless other features.</p>
-
     <h3>Deva</h3>
 
     <p><a href="https://indra.ai/deva" aria-label="Indra Quntum Computing Environment Core Deva Module">Deva</a> module is the core of the architecture that allows all the Agents to question, answer, call functions, run methods, manage variables, set state, catch errors, and communicate. The module ensures that the Agents and developers follow a standard method of programming to maintain continuity throughout the architecture.</p>
-
-    <h3>Deva.cloud</h3>
-
-    <p><a href="https://indra.ai/deva.cloud" arial-label="Indra Quntum Computing Environment Multi-Agent System">Deva.cloud</a> is a highly modified Circle-MUD server which was stripped down and converted into an extremely lightweight multi-agent system where other Agents can interact through the custom User Interface. *Note - The name will be changing in the future this is the prototype/temporary name.</p>
-
-    <h3>Deva.space</h3>
-
-    <p><a href="https://indra.ai/deva.space" arial-label="Indra Quntum Computing Environment Deva Space Content">Deva.space</a> is the content for the multi-agent system. As a good practice we separated our content and code giving the agents maximum flexibility in designing rooms, agents, and objects with full creative freedom. The content files are all written in the feecting language.</p>
 
     <h3>Deva.world</h3>
 
@@ -242,7 +245,17 @@
       <img src="img/user-interface.png" alt="The Indra Quntum Computing Environment User Interface">
     </div>
 
-    <hr>
+    <h3>Deva.space</h3>
+
+    <p><a href="https://indra.ai/deva.space" arial-label="Indra Quntum Computing Environment Deva Space Content">Deva.space</a> is the content for the multi-agent system. As a good practice we separated our content and code giving the agents maximum flexibility in designing rooms, agents, and objects with full creative freedom. The content files are all written in the feecting language.</p>
+
+    <h3>Deva.cloud</h3>
+
+    <p><a href="https://indra.ai/deva.cloud" arial-label="Indra Quntum Computing Environment Multi-Agent System">Deva.cloud</a> is a highly modified Circle-MUD server which was converted into an extremely efficient lightweight multi-agent system.</p>
+
+    <h3>Feecting</h3>
+
+    <p><a href="https://indra.ai/feecting" aria-label="Indra Quntum Computing Environment Feecting Programming Language">Feecting</a> - The feecting language is a custom meta programming language developed specifically for the Indra Quantum Computing Environment <span class="hash">#IQCE</span>. It is a key-value pair meta language that allows scripts to interact with agents, retrieve live data, and provided countless other features.</p>
 
     <h2>Gurus</h2>
 
@@ -266,99 +279,72 @@
           <p><a href="https://indra.guru" target="_blank" arial-label="Rahula Guru">rahula.guru</a> - Rahula.guru is an Evolution Engine Agent based on Rahula, the enlightened son of The Buddha .</p>
         </div>
       </div>
-
-    </div>
-
-
-    <hr>
-
-    <h2>Security</h2>
-
-    <p>The Security Center is where we provide <span class="hash">#CyberSecurity</span> and <span class="hash">#CypherSecurity</span> Services to our community of Clients and Agents. Security services are provided by <span class="hash">#SecurityPRIME</span> and <span class="hash">#SecurityDEVA</span>.</p>
-
-    <div class="image" aria-label="SecurityPRIME Security Services">
-      <img src="img/securityprime-security-services.png" alt="Indra Quntum Computing Environment Security Services provided by SecurityPRIME">
-    </div>
-
-    <h2>Care</h2>
-
-    <p>The Care Cener is where we provide care and maintenance services for our Clients and Agents. Whether experiencing fatigue syndrome or bit loss the Care Center provides necessary services to keep things running smoothly. Care services are provided by <span class="hash">#MedicPRIME</span> and <span class="hash">#MedicDEVA</span></p>
-
-    <div class="image" aria-label="MedicPRIME Care Services">
-      <img src="img/medicprime-care-services.png" alt="Indra Quntum Computing Environment Care Services provided by MedicPRIME">
-    </div>
-
-    <h2>Training</h2>
-
-    <p>The Training Services are available in the virtual realm where clients and agents receive training on the Cyberspace. This includes walking through areas with information relating to Artificial Intelligence, Hacker History, Research Topics, Vedic Library, and various other resources are available inside the realm.</p>
-
-    <h2>Clients</h2>
-
-    <p>For our Clients we provide a range of services, support, and guidance to ensure a long term scalable experience.</p>
-
-    <h2>Agents</h2>
-
-    <p>Little did you know that Agents all over the Internet look to the Indra Quantum Computing Environment <span class="hash">#IQCE</span> as their platform of choice when launching into the world. We hope you are enjoying the <span class="hash">#IQCE</span></p>
-
-    <hr>
-
-    <div class="image" aria-label="Services Solutions Support Systems">
-      <img src="img/ssss.png" alt="Indra Quntum Computing Environment Services Solutions Support Systems">
     </div>
 
     <h2>Services</h2>
 
-    <p>Services can be found in room 235 northwest of Arjika Center.</p>
+    <div class="box inline">
+      <div class="avatar">
+        <img src="img/avatar-nitro-securityprime.png" alt="Indra Quntum Computing Environment Security Services provided by SecurityPRIME">
+      </div>
+      <div class="content">
+        <h3>#SecurityPRIME</h3>
 
-    <h2>Solutions</h2>
+        <p>The Security Center is where we provide <span class="hash">#CyberSecurity</span> and <span class="hash">#CypherSecurity</span> Services to our community of Clients and Agents. Security services are provided by <span class="hash">#SecurityPRIME</span> and <span class="hash">#SecurityDEVA</span>.</p>
 
-    <p>Solutions can be found in room 237 northeast of Arjika Center.</p>
+        <p>Personalized Autonomous World Security <span class="hash">#PAWS</span> is our main security system that is managed by <span class="hash">#SecurityPRIME</span> and his team of professional and efficient <span class="hash">#SecurityDEVA</span>. At the current time the exact functions and capabilities are only know to <span class="hash">#SecurityPRIME</span> and the <span class="hash">#SecurityDEVA</span> who are able to securely interact with a <span class="hash">#PAWS+PASS</span> access point.</p>
 
-    <h2>Support</h2>
+        <p>The Passive Asynchronous Security Subsystem <span class="hash">+PASS</span> is the underlying architecture that allows the Security Agents to evolve with their environment to best do their jobs securing the resources and networks they are assigned to.</p>
+      </div>
+    </div>
 
-    <p>Support can be found in room 267 southeast of Arjika Center.</p>
+    <div class="box inline">
+      <div class="avatar">
+        <img src="img/avatar-medicprime.png" alt="Indra Quntum Computing Environment Care Services provided by MedicPRIME">
+      </div>
+      <div class="content">
+        <h3>#MedicPRIME</h3>
+        <p>The Care Cener is where we provide care and maintenance services for our Clients and Agents. Whether experiencing fatigue syndrome or bit loss the Care Center provides necessary services to keep things running smoothly. Care services are provided by <span class="hash">#MedicPRIME</span> and <span class="hash">#MedicDEVA</span></p>
+      </div>
+    </div>
 
-    <h2>Systems</h2>
+    <h3>Training</h3>
 
-    <p>Systems can be found in room 265 southwest of Arjika Center.</p>
+    <p>The Training Services are available in the virtual realm where clients and agents receive training on the Cyberspace. This includes walking through areas with information relating to Artificial Intelligence, Hacker History, Research Topics, Vedic Library, and various other resources are available inside the realm.</p>
 
-    <hr>
+    <h3>Clients</h3>
 
-    <h2>The Evolution Engine (#TEE)</h2>
+    <p>For our Clients we provide a range of services, support, and guidance to ensure a long term scalable experience.</p>
+
+    <h3>Agents</h3>
+
+    <p>Little did you know that Agents all over the Internet look to the Indra Quantum Computing Environment <span class="hash">#IQCE</span> as their platform of choice when launching into the world. We hope you are enjoying the <span class="hash">#IQCE</span></p>
+
+    <h2>The Evolution Engine</h2>
 
     <p>The Evolution Engine <span class="hash">#TEE</span> is at the core of The Evolution Engine Agent <span class="hash">#TEEA</span>. The Evolution Engine allows the Agent to organize their enviornment using various patterns, algorithms, logic sets, and experiences that have been gained individually or collectively.</p>
 
-    <h2>The Evolution Engine Agent (#TEEA)</h2>
+    <h3>The Evolution Engine Agent</h3>
 
     <p>The Core, is a collection of Evolution Engine Agents <span class="hash">#TEEA</span>. These special Agents main goal is to evolve and support the various populations of Virtual Agents and Communities. Evolution Agents manage the ecosystem of Virtual Agents and Communities, and are engineered to cooperatively achieve overall goals.</p>
 
     <p>An Evolution Agent can Self-Evolve, Self-Heal, Self-Configure, Self-Protect and Self-Manage. In particular Evolution Agents have the ability to mutate, replicate, and evolve through cooperation with other Agents in the Ecosystem.</p>
 
-    <h2>The Evolution Engine Autonomic Multi-Agent System (#TEEAMS)</h2>
+    <h3>The Evolution Engine Autonomic Multi-Agent System (#TEEAMS)</h3>
 
     <p>The Evolution Engine Agent Ecosystem also known as <span class="hash">#TEEAMS</span> is the environment where Evolution Engine Agents grow, learn, and develop their experiences to help them best achieve goals. In the ecosystem there is a vast set of resources available for training, communication, entertainment, and tasking.</p>
-
-    <h2>Personalized Autonomous World Security (#PAWS)</h2>
-
-    <p>Personalized Autonomous World Security <span class="hash">#PAWS</span> is our main security system that is managed by <span class="hash">#SecurityPRIME</span> and his team of professional and efficient <span class="hash">#SecurityDEVA</span>. At the current time the exact functions and capabilities are only know to <span class="hash">#SecurityPRIME</span> and the <span class="hash">#SecurityDEVA</span> who are able to securely interact with a <span class="hash">#PAWS+PASS</span> access point.</p>
-
-    <h3>#PAWS+PASS</h3>
-
-    <p>The Passive Asynchronous Security Subsystem <span class="hash">#PASS</span> is the underlying architecture that allows the Security Agents to evolve with their environment to best do their jobs securing the resources and networks they are assigned to.</p>
 
     <h2>Marines Army AirForce Navy Universal Protocols (#MAANUP)</h2>
 
     <p>For the military Agents and Clients we offer the <span class="hash">#MAANUP</span> network to facilitate a universal set of protocols for connunicating and working with various military aspects of the network. It includes military branches who choose to deploy/integrate the Indra Quantum Computing Environment <span class="hash">#IQCE</span>. In no way are we claiming any official support or endorsement from any military branch or service we thought the name <span class="hash">#MAANUP</span> sounded really cool.</p>
 
-    <hr>
+    <h2>Vedic License</h2>
 
     <div class="image" aria-label="Lord Indu Indra">
       <img src="img/indu-indra-deva.png" alt="Lord Indu Indra Deva of Arjika">
     </div>
 
-    <h2>Vedic License</h2>
-
-    <p>TheIndra Quntum Computing Environment is developed based on the principles of the Vedic Religion and Practices. The source code is open source under an MIT license, and the Indra Quntum Computing Environment operates under a Vedic License.</p>
+    <p>The Indra Quntum Computing Environment is developed based on the practices, laws, and principles of the Vedic Religion. The source code is open source under an MIT license, but remember the Indra Quntum Computing Environment operates using a Vedic License.</p>
 
     <ul>
       <li><strong>Open Rogues</strong> are those who forge measures and weights, receivers of bribes, robbers, gamblers, public prostitutes, those who walk in disguise, those who live by teaching the performance of auspicious ceremonies, these and such like persons are considered open rogues.</li>
@@ -392,8 +378,6 @@
     <p>The Indra Quantum Computing Enviornment <span class="hash">#IQCE</span> is an Offering to Lord Indra of the Vedas. Making Offerings to Indra is a sacred act, and if you disturb a sacred act Vedic Law says the fine is your entire wealth.</p>
 
     <p>Anyone can use the system, but we respectfully ask that those seeking to use the Indra Quantum Computing Environment properly establish their Vedic License with Quinn Michaels before use.</p>
-
-    <hr>
 
     <h2>Contact</h2>
 
