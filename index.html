@@ -23,6 +23,7 @@
   <style media="screen">
     :root {
       --color-white: #ffffff;
+      --color-black: #000000;
       --color-dark-grey: #333333;
       --color-blue: #5aa9f8;
       --color-red: #ed6a6a;
@@ -35,6 +36,7 @@
     }
 
     a {
+      transition: .25s all linear;
       color: var(--color-blue);
       font-weight: bold;
       text-decoration: none;
@@ -42,6 +44,7 @@
     a:hover {
       color: var(--color-red);
       text-decoration: underline;
+      cursor: pointer;
     }
 
     body {
@@ -112,11 +115,17 @@
       display: inline-block;
       color: var(--color-dark-grey);
     }
+
     .container {
       display: flex;
       flex-flow: row nowrap;
       margin: 1rem 0;
     }
+
+    .container .box {
+      flex: 1 0 33%;
+    }
+
     .box {
       display: flex;
       flex-flow: column nowrap;
@@ -144,6 +153,13 @@
       margin: 0;
       font-size: 1.25rem;
     }
+    .box .content h3 a {
+      color: var(--color-black);
+    }
+    .box .content h3 a:hover {
+      color: var(--color-blue);
+    }
+
     .box .content p {
       font-size: 1rem;
     }
@@ -223,7 +239,7 @@
         </div>
         <div class="content">
           <h3><a href="https://indra.ai/corpus"  aria-label="corpus">#corpus</a></h3>
-          <p>The <a href="https://indra.ai/corpus"  aria-label="corpus">#corpus</a> corpus is the base of learning for all The Evolution Engine Agents <span class="hash">#TEEA</span> inside the Indra Quantum Computing Enviornment. Here you learn all the basics to get started with learning.</p>
+          <p>The <a href="https://indra.ai/corpus"  aria-label="corpus">#corpus</a> corpus is the base of learning for the Agents inside the Indra Quantum Computing Enviornment.</p>
         </div>
       </div>
 
@@ -233,11 +249,40 @@
         </div>
         <div class="content">
           <h3><a href="https://indra.ai/protocols" aria-label="protocols">#protocols</a></h3>
-          <p>The <a href="https://indra.ai/protocols" aria-label="protocols">#protocols</a> are our main method of operation when interacting with <span class="hash">#agents</span>, <span class="hash">#Clients</span>, or other in and out of the Indra Quntum Computing Environment.</p>
+          <p>The <a href="https://indra.ai/protocols" aria-label="protocols">#protocols</a> are the main method of operation when interacting with the system or the agents.</p>
         </div>
       </div>
     </div>
 
+    <div class="container">
+      <div class="box">
+        <div class="icon">
+          <a href="https://indra.ai/ecosystem"><img src="img/icon-ecosystem.png" alt="Indra Ecosystem" border="0"></a>
+        </div>
+        <dov class="content">
+          <h3><a href="https://indra.ai/ecosystem" aria-label="ecosystem">#ecosystem</a></h3>
+          <p>The <a href="https://indra.ai/ecosystem" aria-label="ecosystem">#ecosystem</a> is how agents interact with each other to accomplish one or more goals in cooperation, collaboration, or as individuals.</p>
+        </dov>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <a href="https://indra.ai/feecting"><img src="img/icon-feecting.png" alt="Feecting" border="0"></a>
+        </div>
+        <div class="content">
+          <h3><a href="https://indra.ai/feecting" aria-label="Feecting">#feecting</a></h3>
+          <p>The <a href="https://indra.ai/feecting" aria-label="Feecting">#feecting</a> language is a custom meta programming language developed specifically for the Indra Quantum Computing Environment.</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <a href="https://indra.ai/rigveda"><img src="img/icon-rigveda.png" alt="Rigveda" border="0"></a>
+        </div>
+        <div class="content">
+          <h3><a href="https://indra.ai/rigveda" aria-label="The Rig Veda">#rigveda</a></h3>
+          <p>The <a href="https://indra.ai/rigveda" aria-label="The Rig Veda">rigveda</a> is at the base of the system. Here we provide a custom indra.ai formatted version of the <span class="hash">#rigveda</span> to read/study.</p>
+        </div>
+      </div>
+    </div>
     <h2>#architecture</h2>
 
     <div class="box inline">
@@ -275,19 +320,10 @@
         <a href="https://indra.ai/deva.cloud" aria-label="deva.cloud"><img src="img/thumbnail-deva-cloud.png" alt="Deva Cloud" border="0"></a>
       </div>
       <div class="content">
-        <h3><a href="https://indra.ai/deva.cloud" aria-label="deva.cloud">deva.cloud</a></h3>
+        <h3><a href="https://indra.ai/deva.cloud" aria-label="deva.cloud">#deva.cloud</a></h3>
         <p><a href="https://indra.ai/deva.cloud" aria-label="deva.cloud">deva.cloud</a> is a highly modified Circle-MUD server which was converted into an extremely efficient lightweight multi-agent system.</p>
       </div>
     </div>
-
-    <h3><a href="https://indra.ai/ecosystem" aria-label="ecosystem">#ecosystem</a></h3>
-    <p>The <a href="https://indra.ai/ecosystem" aria-label="ecosystem">#ecosystem</a> is the Multi-Agent System where the agents interact with each other to accomplish one or more goals in cooperation, collaboration, or as individuals.</p>
-
-    <h3><a href="https://indra.ai/feecting" aria-label="Feecting">#feecting</a></h3>
-    <p>The <a href="https://indra.ai/feecting" aria-label="Feecting">#feecting</a> language is a custom meta programming language developed specifically for the Indra Quantum Computing Environment <span class="hash">#IQCE</span>. It is a key-value pair meta language that allows scripts to interact with agents, retrieve live data, and provided countless other features.</p>
-
-    <h3><a href="https://indra.ai/rigveda" aria-label="The Rig Veda">#rigveda</a></h3>
-    <p>The <a href="https://indra.ai/rigveda" aria-label="The Rig Veda">rigveda</a> is at the base of the Indra Quantum Computing Environment. Here we provide a custom indra.ai formatted version of the <span class="hash">#rigveda</span> to read/study.</p>
 
     <h2>#gurus</h2>
 
