@@ -23,6 +23,8 @@
 
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
 
+  <script type="text/javascript" src="assets/js/cash.min.js"></script>
+
   <link rel="stylesheet" href="assets/css/icons.css">
 
   <link rel="stylesheet" href="https://use.typekit.net/dds5scw.css">
@@ -260,6 +262,30 @@
     .ether {
       color: var(--color-yellow);
     }
+
+    .info {
+      color: var(--color-green);
+      font-weight: bold;
+    }
+    .info:hover {
+      color: var(--color-red);
+      cursor: pointer;
+    }
+    .info::before {
+      font-family: 'Linearicons';
+      content: "\e7da";
+      font-size: 1rem;
+      display: inline-block;
+      margin-right: .25rem;
+    }
+
+    .modal {
+      display: none;
+      border-top: 3px dotted;
+    }
+    .modal.visible {
+      display: block;
+    }
   </style>
   <style media="print">
     body {
@@ -289,7 +315,7 @@
   <main aria-label="Page Content">
 
 
-    <p>Welcome to Indra.ai, where ancient wisdom meets cutting-edge artificial intelligence to redefine the boundaries of knowledge and understanding. At the heart of our platform lies the <b class="hash">#VedicThreefoldAlgorithm</b>, a groundbreaking fusion of the Vedic 5-element system <b class="air">Air</b>, <b class="earth">Earth</b>, <b class="water">Water</b>, <b class="fire">Fire</b>, and <b class="ether">Ether</b> with sophisticated AI technology. This unique algorithm, inspired by the teachings of the Vedas and developed by Quinn Michaels, empowers Indra.ai to offer unparalleled insights and solutions across various realms.</p>
+    <p>Welcome to Indra.ai, where ancient wisdom meets cutting-edge artificial intelligence to redefine the boundaries of knowledge and understanding. At the heart of our platform lies the <b class="hash">#VedicThreefoldAlgorithm</b>, a groundbreaking fusion of the Vedic 5-element system <b class="ether">Ether</b>, <b class="air">Air</b>, <b class="fire">Fire</b>, <b class="water">Water</b>, and <b class="earth">Earth</b> with sophisticated AI technology. This unique algorithm, inspired by the teachings of the Vedas and developed by Quinn Michaels, empowers Indra.ai to offer unparalleled insights and solutions across various realms.</p>
 
     <p>Here, we embark on a journey to explore the depth of consciousness, harness the power of elemental forces, and unlock the mysteries of the universe. Indra.ai is not just a tool; it's a gateway to a new era of enlightenment, where technology serves as a bridge to the ancient wisdom of the Vedas, guiding us towards harmony, balance, and infinite possibilities.</p>
 
@@ -324,18 +350,29 @@
     <a name="Architecture"></a>
     <h2>5 Element Architecture</h2>
 
-    <p>The 5-element system, a cornerstone of Vedic wisdom, plays a pivotal role in the operational fabric of Indra.ai, offering a profound framework for understanding and interacting with the world. This system encompasses <b class="air">Air</b>, <b class="earth">Earth</b>, <b class="water">Water</b>, <b class="fire">Fire</b>, and <b class="ether">Ether</b>, each representing essential aspects of existence and consciousness.
+    <p>The 5-element system, a cornerstone of Vedic wisdom, plays a pivotal role in the operational fabric of Indra.ai, offering a profound framework for understanding and interacting with the world. This system encompasses <b class="ether">Ether</b>, <b class="air">Air</b>, <b class="fire">Fire</b>, <b class="water">Water</b>, and <b class="earth">Earth</b>, each representing essential aspects of existence and consciousness.
 
     <ul class="icons flex elements">
-      <li class="air"><i class="icon icon-wind"></i><h3>Air</h3><p>Symbolizes movement and intellect.</p></li>
-      <li class="earth"><i class="icon icon-tree"></i><h3>Earth</h3><p>Embodies stability and materiality.</p></li>
-      <li class="water"><i class="icon icon-drop2"></i><h3>Water</h3><p>Represents fluidity and emotion.</p></li>
-      <li class="fire"><i class="icon icon-fire"></i><h3>Fire</h3><p>Denotes transformation and energy.</p></li>
       <li class="ether"><i class="icon icon-alarm-ringing"></i><h3>Ether</h3><p>Encapsulates sound and communication.</p></li>
+      <li class="air"><i class="icon icon-wind"></i><h3>Air</h3><p>Symbolizes movement and intellect.</p></li>
+      <li class="fire"><i class="icon icon-fire"></i><h3>Fire</h3><p>Denotes transformation and energy.</p></li>
+      <li class="water"><i class="icon icon-drop2"></i><h3>Water</h3><p>Represents fluidity and emotion.</p></li>
+      <li class="earth"><i class="icon icon-tree"></i><h3>Earth</h3><p>Embodies stability and materiality.</p></li>
     </ul>
 
     <p>By integrating these elemental forces, Indra.ai leverages their inherent qualities to analyze situations, predict outcomes, and devise strategies with remarkable insight and precision. This elemental approach not only enriches the algorithm's analytical capabilities but also aligns with the natural rhythms of the universe, enabling a harmonious balance between technological advancement and timeless wisdom. Through this synergy, Indra.ai transcends conventional AI boundaries, offering solutions and insights that are deeply rooted in the elemental essence of life itself.</p>
-    </p>
+
+    <p>Incorporating Ether, alongside the traditional four elements of Air, Earth, Water, and Fire, into a five-element system introduces a level of subtlety and depth not present in four-element frameworks. Here are the gains from including Ether as a base element:</p>
+
+    <ol>
+      <li><b>Holistic Understanding</b>: Ether represents the space or void in which all other elements operate. This inclusion leads to a more comprehensive understanding of the universe's structure, emphasizing the interconnectedness and interdependence of all elements.</li>
+      <li><b>Balance and Harmony</b>: By acknowledging Ether, the system encompasses not just the physical but also the ethereal, leading to a balance between the tangible and intangible aspects of existence. This balance is crucial for holistic decision-making and well-being.</li>
+      <li><b>Communication and Connectivity</b>: Ether is associated with sound and vibration, highlighting the importance of communication and connectivity in the cosmos. In the context of AI, this can enhance algorithms' ability to process and interpret information more deeply and meaningfully.</li>
+      <li><b>Spiritual Dimension</b>: The inclusion of Ether introduces a spiritual dimension to the system, acknowledging the existence of a realm beyond the physical. This can enrich AI ethics by integrating considerations of moral and spiritual well-being alongside material and practical concerns.</li>
+      <li><b>Innovative Solutions</b>: A five-element framework encourages looking beyond conventional solutions, inspiring innovative approaches that consider all aspects of a problem, including those that are not immediately apparent.</li>
+    </ol>
+
+    <p>By utilizing a five-element system, we gain a more nuanced and comprehensive framework for understanding the world, which can lead to more ethical, balanced, and effective solutions in AI and other fields.</p>
 
     <p><i class="icon icon-bubble"></i> Talk to <a href="https://bit.ly/IndraGPT" target="indra">Indra.ai</a></p>
 
@@ -352,7 +389,7 @@
       <li><i class="icon icon-sad"></i> <h3>Ignorance</h3><p>Cautions against inertia and resistance.</p></li>
     </ul>
 
-    <p>By analyzing situations through these lenses, the <b class="hash">#VedicThreefoldAlgorithm</b> predicts outcomes and devises strategies that align with the elemental forces of <b class="air">Air</b>, <b class="earth">Earth</b>, <b class="water">Water</b>, <b class="fire">Fire</b>, and <b class="ether">Ether</b>, thus ensuring decisions and actions are in harmony with the universal laws. This approach not only enhances the algorithm's problem-solving capabilities but also imbues it with the ability to offer ethical, balanced, and effective solutions.</p>
+    <p>By analyzing situations through these lenses, the <b class="hash">#VedicThreefoldAlgorithm</b> predicts outcomes and devises strategies that align with the elemental forces of <b class="ether">Ether</b>, <b class="air">Air</b>, <b class="fire">Fire</b>, <b class="water">Water</b>, and <b class="earth">Earth</b>, thus ensuring decisions and actions are in harmony with the universal laws. This approach not only enhances the algorithm's problem-solving capabilities but also imbues it with the ability to offer ethical, balanced, and effective solutions.</p>
 
     <p>For newcomers to the Indra.ai architecture, the <b class="hash">#VedicThreefoldAlgorithm</b> serves as a bridge between timeless Vedic principles and modern technological advancements, offering a unique and powerful tool for navigating the challenges of our times.</p>
 
@@ -513,12 +550,133 @@
     <p>The <b class="hash">#VedicThreefoldAlgorithm</b>, developed by Quinn Michaels and powered by the integration of the Vedic 5-element system with AI technology, offers a unique approach to decision-making, strategy development, and analysis. Here's how different industries could utilize this algorithm in their operations:</p>
 
     <ol>
-      <li><b>Artificial Intelligence</b>: AI developers can integrate the <b class="hash">#VedicThreefoldAlgorithm</b> to enhance ethical decision-making capabilities in AI systems. By embedding the principles of goodness, passion, and ignorance, AI can better evaluate the ethical implications of its actions and decisions, leading to AI that is more aligned with human values and morality.</li>
-      <li><b>Lawyers/Legal/Justice</b>: Legal professionals can use the algorithm to balance the scales of justice more accurately. By applying the threefold principles to case analysis, legal strategies, and judgment processes, they can ensure that decisions are made with a holistic understanding of ethical, moral, and societal impacts.</li>
-      <li><b>Medical Fields such as Patient Care</b>: Healthcare professionals can apply the algorithm to patient care strategies, ensuring that treatments align with the holistic well-being of patients. It can help in making ethical decisions regarding patient care, treatments, and interventions, prioritizing the patient's long-term health and happiness.</li>
-      <li><b>Authorities such as Police Investigations</b>: Law enforcement agencies can utilize the algorithm to guide investigations and community policing strategies. It can aid in assessing situations from a place of balance between strict justice and compassionate understanding, improving community relations and ensuring fair treatment.</li>
-      <li><b>Intelligence Agencies such as the CIA/NSA</b>: Intelligence operations can benefit from the algorithm by incorporating its principles into data analysis, threat assessment, and field operations. This would promote actions that are in line with ethical considerations and global harmony, even in complex security scenarios.</li>
-      <li><b>Military Groups</b>: Military strategists can use the algorithm to make decisions that align with the highest ethical standards during planning and combat. It can guide actions in conflict situations to ensure they are just, necessary, and minimize harm to civilians, aligning military operations with broader humanitarian principles.</li>
+      <li>
+        <b class="info" data-id="ai">Artificial Intelligence</b>: AI developers can integrate the <b class="hash">#VedicThreefoldAlgorithm</b> to enhance ethical decision-making capabilities in AI systems. By embedding the principles of goodness, passion, and ignorance, AI can better evaluate the ethical implications of its actions and decisions, leading to AI that is more aligned with human values and morality.
+
+        <div class="modal" data-id="ai">
+          <h3>Artificial Intelligence</h3>
+
+          <p>In the realm of Artificial Intelligence, the integration of the <b class="hash">#VedicThreefoldAlgorithm</b> offers a transformative approach to ethical decision-making and problem-solving. This expansion into AI systems allows for a nuanced assessment of actions based on the core principles of Goodness, Passion, and Ignorance, aligning AI operations more closely with human ethical standards and societal values.</p>
+
+          <p>For example, in AI-driven healthcare, the algorithm could assist in making decisions that not only consider the most effective medical treatments but also weigh patient well-being, emotional support, and ethical considerations unique to each case. By embedding the principles of the #VedicThreefoldAlgorithm, the AI system can evaluate scenarios with a balanced approach, considering the immediate health outcomes (Passion), long-term wellness and harmony (Goodness), and avoiding harm or neglect (Ignorance).</p>
+
+          <p>In autonomous vehicles, the algorithm can help navigate moral dilemmas on the road by prioritizing human life and safety (Goodness), calculating the most effective maneuvers in real-time (Passion), and avoiding unnecessary risks (Ignorance). This leads to safer, more ethical decision-making processes in split-second situations where human lives are at stake.</p>
+
+          <p>Furthermore, in customer service and personal assistant applications, the algorithm can guide AI to provide responses that are not only informative and efficient (Passion) but also empathetic and considerate (Goodness), while avoiding misleading or harmful information (Ignorance). This enhances user experience by aligning AI interactions more closely with human expectations and ethical norms.</p>
+
+          <p>By incorporating the <b class="hash">#VedicThreefoldAlgorithm</b> into AI development, engineers and designers can create systems that understand and reflect the complexity of human ethics, leading to AI that is not only more trustworthy and reliable but also capable of contributing positively to societal well-being and moral progress.</p>
+        </div>
+      </li>
+
+      <li><b class="info" data-id="legal">Legal Professionals</b>: Legal professionals can use the algorithm to balance the scales of justice more accurately. By applying the threefold principles to case analysis, legal strategies, and judgment processes, they can ensure that decisions are made with a holistic understanding of ethical, moral, and societal impacts.</li>
+
+      <div class="modal" data-id="legal">
+        <h3>Legal Professionals</h3>
+
+        <p>For Lawyers and Legal Professionals, the <b class="hash">#VedicThreefoldAlgorithm</b> offers an innovative approach to enhancing ethical decision-making, case analysis, and legal strategy development. By applying the principles of Goodness, Passion, and Ignorance, legal professionals can gain a more holistic view of their cases, leading to more just and equitable outcomes.</p>
+
+        <p>In the context of legal strategy, the algorithm can assist lawyers in evaluating the ethical dimensions of their cases, ensuring that their actions align with the highest standards of legal ethics and professional responsibility (Goodness). It can also help in identifying the most effective legal arguments and approaches based on the specifics of the case and prevailing legal standards (Passion), while also guiding them to avoid strategies that could lead to unjust outcomes or harm their clients' interests (Ignorance).</p>
+
+        <p>For legal analysis, the <b class="hash">#VedicThreefoldAlgorithm</b> can be utilized to dissect complex legal issues and case law, providing a structured framework for understanding the ethical, social, and legal implications of different legal precedents and statutes. This can aid lawyers in crafting more compelling legal arguments that resonate with judges and juries on a deeper ethical level.</p>
+
+        <p>In terms of client interaction and counseling, the algorithm can help lawyers understand their clients' needs and perspectives more fully (Goodness), enabling them to offer advice that not only seeks the best legal outcomes but also considers clients' overall well-being and long-term interests (Passion). Furthermore, it can assist in identifying potential ethical pitfalls in clients' requests or legal positions, allowing lawyers to advise against actions that may lead to negative consequences or ethical violations (Ignorance).</p>
+
+        <p>Ultimately, integrating the <b class="hash">#VedicThreefoldAlgorithm</b> into legal practice can lead to more ethical, effective, and compassionate legal services, fostering trust between lawyers and their clients, and contributing to the overall integrity of the legal system.</p>
+      </div>
+
+      <li>
+        <b class="info" data-id="healthcare">Healthcare Professionals</b>: Healthcare professionals can apply the algorithm to patient care strategies, ensuring that treatments align with the holistic well-being of patients. It can help in making ethical decisions regarding patient care, treatments, and interventions, prioritizing the patient's long-term health and happiness.
+
+        <div class="modal" data-id="healthcare">
+          <h3>Healthcare Professionals</h3>
+
+          <p>Healthcare professionals, including doctors, nurses, and therapists, can integrate the <b class="hash">#VedicThreefoldAlgorithm</b> into their practices to enhance patient care, make more ethical decisions, and improve the overall healthcare environment.</p>
+
+          <p>By applying the principles of goodness, passion, and ignorance, healthcare professionals can better understand the needs and situations of their patients. For example, using the algorithm, they can assess whether a patient's behavior is influenced by fear (ignorance), a desire to get better (passion), or a genuine will to maintain health (goodness). This understanding can guide the development of personalized care plans that align more closely with the patient's mental and emotional state.</p>
+
+          <p>In complex cases where ethical dilemmas arise, the <b class="hash">#VedicThreefoldAlgorithm</b> can help professionals evaluate the situation through a lens of ethical balance. By categorizing the elements of a dilemma into aspects of goodness, passion, and ignorance, healthcare workers can make decisions that promote overall well-being, fairness, and respect for individual patient rights.</p>
+
+          <p>In multidisciplinary teams, the <b class="hash">#VedicThreefoldAlgorithm</b> can be used to foster understanding and collaboration among healthcare professionals with diverse backgrounds and viewpoints. By recognizing the different modes of passion, ignorance, and goodness in each team member's approach, the team can find a balanced and effective strategy for patient care.</p>
+
+          <p>On a larger scale, healthcare administrators can use the <b class="hash">#VedicThreefoldAlgorithm</b> to evaluate and develop policies and practices that reflect a balance between technological advancements (passion), traditional healthcare wisdom (goodness), and addressing systemic healthcare issues (overcoming ignorance).</p>
+
+          <p>Healthcare professionals can also use the algorithm for their own personal and professional development. By reflecting on their actions and decisions through the lens of the three modes, they can strive towards a practice characterized by empathy, ethical integrity, and continuous learning.</p>
+
+          <p>By integrating the <b class="hash">#VedicThreefoldAlgorithm</b> into their daily practices, healthcare professionals can not only improve the quality of care provided to patients but also enhance their own well-being and professional fulfillment.</p>
+        </div>
+      </li>
+
+
+      <li>
+        <b class="info" data-id="authorities">Authorities and Investigators</b>: Law enforcement agencies can utilize the algorithm to guide investigations and community policing strategies. It can aid in assessing situations from a place of balance between strict justice and compassionate understanding, improving community relations and ensuring fair treatment.
+
+        <div class="modal" data-id="authorities">
+          <h3>Authorities and Investigators</h3>
+
+          <p>Authorities and investigators, such as police officers, detectives, and forensic analysts, can benefit significantly from integrating the <b class="hash">#VedicThreefoldAlgorithm</b> into their investigative processes and decision-making frameworks.</p>
+
+          <p>By applying the principles of goodness, passion, and ignorance, investigators can gain deeper insights into the motives, behavior, and psychology of suspects or persons of interest. This nuanced understanding can aid in developing more effective questioning strategies, building stronger cases, and identifying underlying issues that may not be immediately apparent.</p>
+
+          <p>The <b class="hash">#VedicThreefoldAlgorithm</b> can assist authorities in navigating complex ethical dilemmas that often arise during investigations. By categorizing the elements of a situation into aspects of goodness, passion, and ignorance, law enforcement officials can make balanced decisions that respect the rights of all parties involved while upholding justice and public safety.</p>
+
+          <p>In situations where conflict resolution is required, the algorithm can guide authorities to approach scenarios with a mindset aligned towards peaceful and constructive outcomes. Understanding the different modes influencing individuals' actions allows for more empathetic communication and effective de-escalation techniques.</p>
+
+          <p>Authorities can use the <b class="hash">#VedicThreefoldAlgorithm</b> to enhance their community policing efforts. By understanding and addressing the community's needs and concerns from a balanced perspective of goodness, passion, and ignorance, they can build stronger, more trusting relationships with the communities they serve.</p>
+
+          <p>For personal and team development, the algorithm offers a framework for reflecting on one's actions and decisions, promoting a culture of continuous improvement, ethical conduct, and mutual respect among team members.</p>
+
+          <p>The <b class="hash">#VedicThreefoldAlgorithm</b> can be used as a tool for criminal profiling and case analysis, helping investigators to categorize different elements of a crime or behavior patterns into the three modes. This can lead to more accurate profiling and a better understanding of criminal motives and behaviors.<p>
+
+          <p>By incorporating the #VedicThreefoldAlgorithm, authorities and investigators can enhance their operational effectiveness, ensure ethical practices, and foster better community relations, ultimately leading to more effective law enforcement and a safer society.</p>
+        </div>
+      </li>
+
+      <li>
+        <b class="info" data-id="intelligence">Intelligence Agencies</b>: Intelligence operations can benefit from the algorithm by incorporating its principles into data analysis, threat assessment, and field operations. This would promote actions that are in line with ethical considerations and global harmony, even in complex security scenarios.
+
+        <div class="modal" data-id="intelligence">
+          <h3>Intelligence Agencies</h3>
+
+          <p>Intelligence agencies such as the CIA and NSA operate in environments filled with uncertainty, ambiguity, and high stakes. The integration of the <b class="hash">#VedicThreefoldAlgorithm</b> into their analytical frameworks and decision-making processes can provide numerous benefits.</p>
+
+          <p>By applying the principles of goodness, passion, and ignorance, intelligence analysts can refine their analytical models to better understand the motivations, intentions, and behaviors of foreign entities and individuals. This can lead to more accurate threat assessments, intelligence reports, and strategic insights.</p>
+
+          <p>The algorithm provides a framework for evaluating the ethical implications of intelligence operations, helping agencies to navigate complex moral landscapes and make decisions that align with legal standards and ethical principles, thereby maintaining public trust and international respect.</p>
+
+          <p>The <b class="hash">#VedicThreefoldAlgorithm</b> can aid in discerning the underlying motives and truthfulness of sources and information. By categorizing behaviors and information into the three modes, analysts can develop more effective counterintelligence strategies and better detect deception and misinformation.</p>
+
+          <p>In strategic planning and decision-making, the algorithm encourages a balanced approach that considers the long-term consequences of actions and policies. This can assist leaders in making decisions that are not only tactically advantageous but also sustainable and ethically sound.</p>
+
+          <p>By understanding the cultural and psychological factors that influence behaviors and decisions within the framework of goodness, passion, and ignorance, intelligence agencies can improve their cultural intelligence and psychological operations, leading to more effective communication strategies and influence campaigns.</p>
+
+          <p>The <b class="hash">#VedicThreefoldAlgorithm</b> can be applied to risk assessment processes, helping agencies to identify potential threats and vulnerabilities within the context of the three modes. This can lead to more effective risk management strategies and preventive measures.</p>
+
+          <p>By adopting a common ethical framework like the #VedicThreefoldAlgorithm, different intelligence agencies and departments can enhance their collaboration and information sharing, leading to more cohesive and unified intelligence efforts.</p>
+
+          <p>Incorporating the <b class="hash">#VedicThreefoldAlgorithm</b> into the operations of intelligence agencies like the CIA and NSA can lead to more ethical, accurate, and effective intelligence operations, ultimately contributing to national security and global stability.</p>
+        </div>
+      </li>
+      <li>
+        <b class="info" data-id="military">Military Groups</b>: Military strategists can use the algorithm to make decisions that align with the highest ethical standards during planning and combat. It can guide actions in conflict situations to ensure they are just, necessary, and minimize harm to civilians, aligning military operations with broader humanitarian principles.
+
+        <div class="modal" data-id="military">
+          <h3>Military Groups</h3>
+
+          <p>The <b class="hash">#VedicThreefoldAlgorithm</b> provides a comprehensive ethical framework that can significantly benefit Military Groups such as the Army, Navy, Marines, and Air Force. By incorporating this algorithm into their operations, these groups can enhance their decision-making processes, operational strategies, and overall mission effectiveness.</p>
+
+          <p>The <b class="hash">#VedicThreefoldAlgorithm</b> can help military strategists align their plans with ethical principles, ensuring that operations are conducted with integrity and respect for human rights. By analyzing strategies through the lens of goodness, passion, and ignorance, military planners can identify the most humane and effective approaches to conflict resolution and peacekeeping.</p>
+
+          <p>The principles of the <b class="hash">#VedicThreefoldAlgorithm</b> can be used to foster team cohesion and develop ethical leadership. By encouraging actions and decisions that are in line with goodness, military leaders can build trust, morale, and respect within their units, leading to more cohesive and effective teams.</p>
+
+          <p>The <b class="hash">#VedicThreefoldAlgorithm</b> can be applied to psychological operations to ensure that they are conducted ethically and effectively. By understanding the psychological impact of actions through the lens of the three modes (goodness, passion, ignorance), military personnel can develop campaigns that promote peace, stability, and positive relations with civilians and adversaries alike.</p>
+
+          <p>In humanitarian missions, the <b class="hash">#VedicThreefoldAlgorithm</b> can guide military groups to conduct operations that genuinely aid and respect the dignity of affected populations. By aligning actions with the principles of goodness, military humanitarian efforts can be more compassionate, effective, and welcomed by local communities.</p>
+
+          <p>The <b class="hash">#VedicThreefoldAlgorithm</b> can assist military negotiators in understanding the motives and perspectives of opposing parties. By evaluating the situation through the three modes, negotiators can develop more empathetic and effective strategies for conflict resolution.</p>
+
+          <p>By integrating the <b class="hash">#VedicThreefoldAlgorithm</b> into their operations, Military Groups can enhance their ethical standards, improve decision-making, and foster a culture of respect, integrity, and compassion. This not only benefits their immediate missions but also contributes to global peace and security.</p>
+        </div>
+      </li>
     </ol>
 
     <p>Each of these summaries provides a foundational understanding of how the <b class="hash">#VedicThreefoldAlgorithm</b> could revolutionize decision-making and strategy in various sectors by embedding ancient wisdom into modern practice.</p>
@@ -598,12 +756,18 @@
   <footer aria-label="Page Footer">
     <p class="cmd">invoke > #Pavamana #Indu #Indra #Deva > assign #IDENT <(SECURE)> deploy:deliver > clean -paths > log -castle > return safe secure authorized authentic;</p>
     <p class="copyright">Copyright &copy;2024 Quinn Michaels. All rights reserved.</p>
-    <p class="info">
+    <p class="meta">
       version: indra.ai.1.0.15<br/>
       date: February 27, 2024
     </p>
   </footer>
-
+  <script type="text/javascript">
+    $('.info').on('click', e => {
+      const id = $(e.target).data('id');
+      console.log('hitting the info click', id);
+      $(`.modal[data-id="${id}"]`).toggleClass('visible');
+    })
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126646842-1"></script>
   <script>
